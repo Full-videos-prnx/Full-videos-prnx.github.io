@@ -6,48 +6,99 @@
     <title>My GitHub Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #282c34;
+            color: #ffffff;
             margin: 0;
             padding: 0;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
+            margin: 40px auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #3c4047;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
         h1 {
-            text-align: center;
-            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #61dafb;
         }
         p {
-            font-size: 18px;
+            font-size: 1.2em;
             line-height: 1.6;
-            color: #555;
+            margin-bottom: 30px;
         }
-        a {
-            color: #0366d6;
+        .repos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .repo {
+            width: 30%;
+            margin: 10px;
+        }
+        .repo img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .repo img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 1em;
+            color: #999;
+        }
+        .footer a {
+            color: #61dafb;
             text-decoration: none;
         }
-        a:hover {
+        .footer a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My GitHub Page</h1>
-        <p>Hello! I'm glad you're here. This is a simple page to showcase my GitHub projects.</p>
-        <p>Check out some of my repositories:</p>
-        <ul>
-            <li><a href="https://github.com/username/repo1" target="_blank">Project 1</a></li>
-            <li><a href="https://github.com/username/repo2" target="_blank">Project 2</a></li>
-            <li><a href="https://github.com/username/repo3" target="_blank">Project 3</a></li>
-        </ul>
-        <p>Feel free to explore and contribute!</p>
-        <p><a href="https://github.com/username" target="_blank">Visit my GitHub Profile</a></p>
+        <div class="profile">
+            <img src="https://link-ke-foto-profil.com/profil.jpg" alt="Profile Photo">
+            <h1>Nama Pengguna</h1>
+            <p>Selamat datang di halaman GitHub saya! Saya seorang developer yang suka membuat proyek-proyek keren. Di bawah ini adalah beberapa proyek saya. Klik gambar untuk melihat lebih lanjut!</p>
+        </div>
+
+        <div class="repos">
+            <div class="repo">
+                <a href="https://github.com/username/repo1" target="_blank">
+                    <img src="https://link-ke-gambar1.com/gambar1.jpg" alt="Project 1">
+                </a>
+            </div>
+            <div class="repo">
+                <a href="https://github.com/username/repo2" target="_blank">
+                    <img src="https://link-ke-gambar2.com/gambar2.jpg" alt="Project 2">
+                </a>
+            </div>
+            <div class="repo">
+                <a href="https://github.com/username/repo3" target="_blank">
+                    <img src="https://link-ke-gambar3.com/gambar3.jpg" alt="Project 3">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 <a href="https://github.com/username" target="_blank">Nama Pengguna</a> - Terima kasih sudah berkunjung!</p>
+        </div>
     </div>
 </body>
 </html>
